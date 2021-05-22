@@ -26,7 +26,7 @@ const Navbar = () => {
                 alt="Ranja Function"/>                
             </NavHeading>
 
-            <Face />
+            <Face menu={menu}/>
 
             <NavMenuBtn onClick={handleMenu} menu={menu}>
                 <NavMenuBtnBar />

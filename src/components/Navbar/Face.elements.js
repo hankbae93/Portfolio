@@ -1,6 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 
-export const FaceContainer = styled.div`
+export const FaceContainer = styled.div.attrs(({ currentScroll, menu }) => ({
+    style: {
+        transform: menu ? `translateX(-50%) scale(${currentScroll.scale})` : 'translateX(-50%) scale(0.1)',
+        top: menu ? `${currentScroll.top}px` : '42px',        
+    }
+}))`
     position: absolute;
     top: 30vh;
     left: 50%;
@@ -11,6 +16,10 @@ export const FaceContainer = styled.div`
     transform-origin: top;
     transform: translateX(-50%);
     transition: all 0.2s ease;
+
+    & div {
+        background-color: ${({menu}) => (menu ? '#fff' : '#2b2b2b')};
+    }
 
     @media screen and (max-width: 1100px) {
         font-size: 15px;
@@ -39,6 +48,7 @@ export const Eyes = styled.div.attrs(({ currentMouse }) => ({
     justify-content: space-between;
     align-items: center;
     width: 100%;      
+    background: none !important;
 `;
 
 const winkEye = keyframes`

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     FaceContainer,
     Eyes,
@@ -7,9 +7,10 @@ import {
     Mouth    
 } from './Face.elements';
 
-const Face = () => {
+const Face = ({ menu }) => {
     const [currentMouse, setCurrentMouse] = useState({});
-    const faceRef = useRef();
+    const [currentScroll, setCurrentScroll] = useState({});
+    
     const moveFace = e => {
         const faceObj = {};
         const fullWidth = window.innerWidth;
@@ -21,15 +22,43 @@ const Face = () => {
         setCurrentMouse({...faceObj});        
     };
 
+    const scaleFace = e => {
+        const y = window.scrollY;
+        const viewHeight = window.innerHeight;
+        const viewWidth = window.innerWidth;
+        const firstTop = Math.floor(viewHeight / 100 * 30); // face default top
+        const baseTop = (viewWidth < 1101) ? 32 : 42;  // face animation end top
+        const topDiffer = firstTop - baseTop;   
+        const animationEndY = Math.floor(viewHeight / 2);
+        const currentTop = firstTop - Math.floor((y / animationEndY) * (topDiffer)); 
+        const currentScale = (1.1 - (y / animationEndY)).toFixed(3);
+
+        if (y > 0 && y <= animationEndY) {
+            setCurrentScroll({
+                ...currentScroll, 
+                top: currentTop,
+                scale: currentScale
+            });
+        } else if (y > animationEndY) {
+            setCurrentScroll({
+                ...currentScroll, 
+                top: baseTop,
+                scale: 0.1
+            });
+        }        
+    };
+
     useEffect(() => {
         window.addEventListener('mousemove', moveFace);       
+        window.addEventListener('scroll', scaleFace);       
         return () => {
             window.removeEventListener('mousemove', moveFace);
+            window.removeEventListener('scroll', scaleFace);
         }
     }, []);
 
     return (
-        <FaceContainer ref={faceRef}>
+        <FaceContainer currentScroll={currentScroll} menu={menu}>
             <Eyes currentMouse={currentMouse}>
                 <Eye></Eye>
                 <Eye></Eye>
