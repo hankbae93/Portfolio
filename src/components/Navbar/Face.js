@@ -26,7 +26,7 @@ const Face = ({ menu }) => {
         const y = window.scrollY;
         const viewHeight = window.innerHeight;
         const viewWidth = window.innerWidth;
-        const firstTop = Math.floor(viewHeight / 100 * 30); // face default top
+        const firstTop = Math.floor(viewHeight / 100 * 27); // face default top
         const baseTop = (viewWidth < 1101) ? 32 : 42;  // face animation end top
         const topDiffer = firstTop - baseTop;   
         const animationEndY = Math.floor(viewHeight / 2);

@@ -10,8 +10,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-size: 16px;
         color: #fff;
-        background-color: #2b2b2b;
-        
+        background-color: #2b2b2b;        
         font-family: 'Noto Sans KR', sans-serif;
     }
 
@@ -22,6 +21,12 @@ const GlobalStyle = createGlobalStyle`
     button, a {
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1100px) {
+        body {
+            font-size: 15px;
+        }
+    }
 `;
 
 export const Container = styled.div`
@@ -29,6 +34,16 @@ export const Container = styled.div`
     height: 400vh;
     padding: 1.5rem 5rem;
     z-index: 1; 
+`;
+
+export const IntroText = styled.h1`
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+    padding: 0 0 15vh;
+    font-size: 2.24rem;    
 `;
 
 export default GlobalStyle;
