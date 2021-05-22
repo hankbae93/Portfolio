@@ -37,13 +37,13 @@ const Navbar = () => {
             <NavMenuBackground menu={menu}>
                 <NavMenu>
                     <NavItem>
-                        <NavLink>ABOUT</NavLink>
+                        <NavLink onClick={handleMenu}>ABOUT</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>WORK</NavLink>
+                        <NavLink onClick={handleMenu}>WORK</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink>CONTACT</NavLink>
+                        <NavLink onClick={handleMenu}>CONTACT</NavLink>
                     </NavItem>                
                 </NavMenu>
             </NavMenuBackground>

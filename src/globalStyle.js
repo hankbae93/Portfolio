@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
         font-size: 16px;
         color: #fff;
         background-color: #2b2b2b;
-        height: 110vh;
+        
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     ul {
@@ -25,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
     width: 100%;
+    height: 400vh;
     padding: 1.5rem 5rem;
     z-index: 1; 
 `;

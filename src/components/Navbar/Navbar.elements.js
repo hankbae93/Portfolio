@@ -97,6 +97,7 @@ export const NavMenuBtnBar = styled.span`
 `;
 
 export const NavMenuBackground = styled.div`
+    overflow: hidden;
     position: fixed;
     left:0;
     top:0;
@@ -107,12 +108,12 @@ export const NavMenuBackground = styled.div`
 `;
 
 export const NavMenu = styled.ul`
+    width: 100%;
+    height: 100vh;
     display: flex; 
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;    
+    flex-direction: column;       
     color: #2b2b2b;    
 `;
 
