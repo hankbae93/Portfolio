@@ -6,7 +6,8 @@ export const FaceContainer = styled.div.attrs(({ currentScroll, menu }) => ({
         top: menu ? `${currentScroll.top}px` : '42px',        
     }
 }))`
-    position: absolute;    
+    position: absolute;
+    top: 30vh;    
     left: 50%;
     z-index: 10;
     font-size: 16px;

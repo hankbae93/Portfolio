@@ -29,10 +29,9 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const Container = styled.div`
-    width: 100%;
-    height: 400vh;
-    padding: 1.5rem 5rem;
+export const Section = styled.section`
+    width: 100%;    
+    padding: 0 3.25rem;
     z-index: 1; 
 `;
 
@@ -44,6 +43,13 @@ export const IntroText = styled.h1`
     height: 100vh;
     padding: 0 0 15vh;
     font-size: 2.24rem;    
+`;
+
+export const Heading = styled.h2`
+    font-size: 3rem;
+    color: #3d84b8;
+    text-shadow: 1px 1px 1px #fff;
+    font-family: 'Poppins', sans-serif;
 `;
 
 export default GlobalStyle;
