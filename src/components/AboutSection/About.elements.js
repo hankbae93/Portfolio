@@ -5,7 +5,12 @@ export const AboutWrapper = styled(Section)`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 15px 3.25em;    
+    padding: 15px 3.25em;   
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        align-items: center;
+    } 
     
 `;
 
@@ -29,6 +34,9 @@ export const AboutTextWrapper = styled.div`
     align-self: center;
     padding-left: 4em;  
     
+    @media screen and (max-width: 1100px) {
+        padding-left: 0;
+    } 
 `;
 
 export const AboutTextContainer = styled.div`

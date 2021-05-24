@@ -25,9 +25,14 @@ const About = () => {
                     <AboutText>
                         "클라이언트 개발에 필요한 기술이라면 무엇이든지!"
                     </AboutText>                   
-                </AboutTextContainer>                         
-                               
-               
+                </AboutTextContainer>     
+
+                <AboutTextContainer>
+                    <AboutTitle>Motivation</AboutTitle> 
+                    <AboutText>
+                        우연히 친구의 부탁으로 AutoHotkey 매크로 프로그램을 제작하면서 개발의 즐거움을 알게 되었고 그 후 웹 프론트엔드 개발에 재미를 느껴 꾸준히 공부하면서 웹 어플리케이션 개발을 꿈꿔왔습니다. 
+                    </AboutText>                   
+                </AboutTextContainer>              
                 
                 <AboutTextContainer>
                     <AboutTitle>Skills</AboutTitle>

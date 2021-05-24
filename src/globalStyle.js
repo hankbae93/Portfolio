@@ -46,10 +46,11 @@ export const IntroText = styled.h1`
 `;
 
 export const Heading = styled.h2`
+    margin-bottom: 15px;
     font-size: 3rem;
-    color: #3d84b8;
-    text-shadow: 1px 1px 1px #fff;
-    font-family: 'Poppins', sans-serif;
+    color: #ffab12;
+    text-shadow: 1px 1px 5px #000;
+    font-family: 'Poppins',sans-serif;
 `;
 
 export default GlobalStyle;
