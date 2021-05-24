@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
 export const Section = styled.section`
     width: 100%;    
+    height: 100vh;
     padding: 0 3.25rem;
     z-index: 1; 
 `;

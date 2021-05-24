@@ -4,7 +4,7 @@ import { Heading, Section } from '../../globalStyle';
 export const AboutWrapper = styled(Section)`
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 15px 3.25em;   
 
     @media screen and (max-width: 1100px) {
