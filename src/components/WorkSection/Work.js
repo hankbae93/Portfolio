@@ -4,9 +4,11 @@ import {
     WorkTitle,
     WorkContainer,
     Project,
-    ProjectSlide,
     ProjectImg,
+    ProjectTitle,
     ProjectDesc,
+    ProjectTech,
+    ProjectTechInfo
  } from './Work.elements';
 
 const Work = () => {
@@ -15,14 +17,20 @@ const Work = () => {
         <WorkWrapper>
             <WorkTitle>Work</WorkTitle>
             <WorkContainer>
-                <Project>
-                    <ProjectSlide>                        
-                        <ProjectImg src={require('../../images/netflix-clone03.png').default}  alt="넷플릭스 클론"/>
-                        
-                    </ProjectSlide>
+                <Project>                                     
+                    <ProjectImg src={require('../../images/netflix-clone03.png').default}/>
                     <ProjectDesc>
-
-                    </ProjectDesc>
+                        <ProjectTitle>RAFLIX <small>(Netflix Clone Project)</small></ProjectTitle>
+                        <ProjectTech>
+                            <ProjectTechInfo>React</ProjectTechInfo>
+                            <ProjectTechInfo>Context API</ProjectTechInfo>
+                            <ProjectTechInfo>Firebase</ProjectTechInfo>
+                            <ProjectTechInfo>React-Slick</ProjectTechInfo>
+                        </ProjectTech>
+                        <p>
+                            <span>DESCRIPTION</span>
+                        </p>
+                    </ProjectDesc>                   
                 </Project>
                 <Project>
                     <ProjectImg />
@@ -37,3 +45,4 @@ const Work = () => {
 };
 
 export default Work;
+                    
