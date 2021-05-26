@@ -20,10 +20,15 @@ export const Head = styled(Heading)`
 
 export const AboutImgWrapper = styled.div`
     width: 400px;        
+
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+        text-align:center;
+    }
 `;
 
 export const AboutImg = styled.img`
-    width: 100%;
+    width: 80%;
 `;
 
 export const AboutTextWrapper = styled.div`    

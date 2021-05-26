@@ -33,6 +33,7 @@ export const Project = styled.div`
     @media screen and (max-width: 1300px) {
         justify-content: center;
         flex-direction: column;
+        padding: 25px;  
     }
 `;
 
@@ -54,21 +55,20 @@ export const ProjectImg = styled.img`
 
     @media screen and (max-width: 1300px) {
         margin: 0 0 20px;
-        min-width: 600px;
-    }
-    
+        width: 100%;
+    }    
 `;
 
 export const ProjectDesc = styled.div`
     width: 50%;
     padding:  10px 25px;
     @media screen and (max-width: 1300px) {        
-        min-width: 600px;
+        width: 100%;
+        padding: 0;
     }
 `;
 
 export const ProjectTech = styled.p`
-
 `;
 
 export const ProjectTechInfo = styled(AboutInfoTech)`

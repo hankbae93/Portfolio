@@ -1,12 +1,27 @@
 import React from 'react';
-import { Section } from '../../globalStyle';
-
+import {
+    ContactWrapper,
+    ContactHeading,
+    ContactUl,
+    ContactLi
+} from './Contact.elements';
 const Contact = () => {
     return (
         <>
-        <Section style={{height: '100vh'}}>
-            Contact
-        </Section>   
+        <ContactWrapper>
+            <ContactHeading>Contact</ContactHeading>
+            <ContactUl>
+                <ContactLi>
+                    깃허브 : 
+                </ContactLi>
+                <ContactLi>
+                    전화번호 : 
+                </ContactLi>
+                <ContactLi>
+                    이메일 : 
+                </ContactLi>
+            </ContactUl>
+        </ContactWrapper>   
         </>
     );
 };
