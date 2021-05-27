@@ -20,7 +20,7 @@ import { FaGithub, FaChrome } from "react-icons/fa";
 const Work = () => {
     return (
         <>
-        <WorkWrapper>
+        <WorkWrapper id="WORK">
             <WorkTitle>Work</WorkTitle>
             <WorkContainer>
                 <Project>                                     

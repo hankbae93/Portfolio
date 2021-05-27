@@ -14,7 +14,7 @@ import {
 const About = () => {
     return (
         <>
-        <AboutWrapper>
+        <AboutWrapper id="ABOUT">
             <AboutImgWrapper>
                 <AboutImg src={require('../../images/about.jpg').default}/>
             </AboutImgWrapper>

@@ -4,22 +4,28 @@ import { Heading, Section } from '../../globalStyle';
 export const ContactWrapper = styled.footer`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     width: 100%;
-    height: 50vh;        
+    flex-direction: column;
+    padding-bottom: 100px;
+    height: 100vh;
+   
 `;
 
-export const ContactHeading = styled(Heading)`
-
+export const ContactHeading = styled(Heading)`    
+    text-align: center;
 `;
 
-export const ContactUl = styled.ul`    
-    padding: 0 0 0 15px;
+export const ContactUl = styled.ul`        
+    display: flex;
+    flex-direction: column;
 `;
-export const ContactLi = styled.li`
-    padding: 10px;
+export const ContactLi = styled.li`       
+    display: inline-block;
     margin-bottom: 10px;
     color: #000;
     background-color: #fff;
     border-radius: 15px;
+    padding: 10px; 
+
 `;

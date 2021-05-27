@@ -8,7 +8,7 @@ import {
 const Contact = () => {
     return (
         <>
-        <ContactWrapper>
+        <ContactWrapper id="CONTACT">
             <ContactHeading>Contact</ContactHeading>
             <ContactUl>
                 <ContactLi>

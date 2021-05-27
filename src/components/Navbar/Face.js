@@ -50,7 +50,7 @@ const Face = ({ menu }) => {
 
     useEffect(() => {
         window.addEventListener('mousemove', moveFace);       
-        window.addEventListener('scroll', scaleFace);       
+        window.addEventListener('scroll', scaleFace);             
         return () => {
             window.removeEventListener('mousemove', moveFace);
             window.removeEventListener('scroll', scaleFace);

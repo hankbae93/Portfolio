@@ -15,7 +15,21 @@ import Face from './Face';
 const Navbar = () => {
     const [menu, setMenu] = useState(true);
 
-    const handleMenu = () => setMenu(!menu);
+    const handleMenu = e => {
+        if (!menu) {
+            const section = e.target.textContent;
+            const view = document.getElementById(section);
+            view.scrollIntoView();
+            console.log(section)
+            setMenu(!menu);
+        } else {
+            setMenu(!menu);
+        }
+    };
+        
+        
+        
+    
     return (
         <NavContainer>
             <NavHeading>

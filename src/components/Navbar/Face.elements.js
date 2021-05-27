@@ -21,16 +21,16 @@ export const FaceContainer = styled.div.attrs(({ currentScroll, menu }) => ({
         background-color: ${({menu}) => (menu ? '#fff' : '#2b2b2b')};
     }
 
-    @media screen and (max-width: 1100px) {
-        font-size: 15px;
-    }
-
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1300px) {
         font-size: 14px;
     }
 
-    @media screen and (max-width: 840px) {
+    @media screen and (max-width: 1100px) {
         font-size: 13px;
+    }
+
+    @media screen and (max-width: 960px) {
+        font-size: 12px;
     }
 `;
 
