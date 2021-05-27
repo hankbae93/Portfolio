@@ -18,10 +18,14 @@ const Navbar = () => {
     const handleMenu = e => {
         if (!menu) {
             const section = e.target.textContent;
-            const view = document.getElementById(section);
-            view.scrollIntoView();
-            console.log(section)
-            setMenu(!menu);
+            if (section === "") {
+                setMenu(!menu);
+            } else {
+                const view = document.getElementById(section);
+                view.scrollIntoView();    
+                setMenu(!menu);            
+            }        
+            
         } else {
             setMenu(!menu);
         }
