@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Heading, Section } from '../../globalStyle';
-import { AboutInfoTech } from '../AboutSection/About.elements';
+// import { AboutInfoTech } from '../AboutSection/About.elements';
 
 export const WorkWrapper = styled(Section)`
     height: auto;
@@ -68,10 +68,10 @@ export const ProjectDesc = styled.div`
     }
 `;
 
-export const ProjectTech = styled.p`
+export const ProjectTech = styled.div`
 `;
 
-export const ProjectTechInfo = styled(AboutInfoTech)`
+export const ProjectTechInfo = styled.div`
 `;
 
 export const ProjectDescription = styled.p`    

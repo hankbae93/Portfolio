@@ -2,19 +2,20 @@ import styled, { keyframes } from 'styled-components';
 
 export const FaceContainer = styled.div.attrs(({ currentScroll, menu }) => ({
     style: {
-        transform: menu ? `translateX(-50%) scale(${currentScroll.scale})` : 'translateX(-50%) scale(0.1)',
-        top: menu ? `${currentScroll.top}px` : '42px',        
+        transform: menu 
+        ? `translateX(-50%) translateY(${currentScroll.top}px) scale(${currentScroll.scale})` 
+        : 'translateX(-50%) translateY(0) scale(0.1)',             
     }
 }))`
     position: absolute;
-    top: 30vh;    
+    top: 4px;    
     left: 50%;
     z-index: 10;
     font-size: 16px;
     width: 22.5em;
     height: 22.5em;
     transform-origin: top;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(25vh);
     transition: all 0.2s ease;
 
     & div {

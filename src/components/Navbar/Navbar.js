@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
     NavContainer,
+    NavWrap,
     NavHeading,
     NavLogo,
     NavMenuBtn,
@@ -11,6 +12,7 @@ import {
     NavMenuBackground
 } from './Navbar.elements';
 import Face from './Face';
+
 
 const Navbar = () => {
     const [menu, setMenu] = useState(true);
@@ -36,35 +38,37 @@ const Navbar = () => {
     
     return (
         <NavContainer>
-            <NavHeading>
-                <NavLogo 
-                src={menu 
-                    ? `${require('../../images/logo.png').default}` 
-                    : `${require('../../images/logo_opened.png').default}`} 
-                alt="Ranja Function"/>                
-            </NavHeading>
+            <NavWrap>
+                <NavHeading>
+                    <NavLogo 
+                    src={menu 
+                        ? `${require('../../images/logo.png').default}` 
+                        : `${require('../../images/logo_opened.png').default}`} 
+                    alt="Ranja Function"/>                
+                </NavHeading>
 
-            <Face menu={menu}/>
+                <Face menu={menu}/>
 
-            <NavMenuBtn onClick={handleMenu} menu={menu}>
-                <NavMenuBtnBar />
-                <NavMenuBtnBar />
-                <NavMenuBtnBar />
-            </NavMenuBtn>
-            
-            <NavMenuBackground menu={menu}>
-                <NavMenu>
-                    <NavItem>
-                        <NavLink onClick={handleMenu}>ABOUT</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink onClick={handleMenu}>WORK</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink onClick={handleMenu}>CONTACT</NavLink>
-                    </NavItem>                
-                </NavMenu>
-            </NavMenuBackground>
+                <NavMenuBtn onClick={handleMenu} menu={menu}>
+                    <NavMenuBtnBar />
+                    <NavMenuBtnBar />
+                    <NavMenuBtnBar />
+                </NavMenuBtn>
+                
+                <NavMenuBackground menu={menu}>
+                    <NavMenu>
+                        <NavItem>
+                            <NavLink onClick={handleMenu}>ABOUT</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink onClick={handleMenu}>WORK</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink onClick={handleMenu}>CONTACT</NavLink>
+                        </NavItem>                
+                    </NavMenu>
+                </NavMenuBackground>
+            </NavWrap>
         </NavContainer>
     );
 };

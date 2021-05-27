@@ -1,23 +1,23 @@
 import styled from 'styled-components';
+import { Container } from '../../globalStyle';
 
 export const NavContainer = styled.div`
     position: fixed;
     left:0;
-    top:0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px 52px 0;
+    top:30px;       
     width: 100%;
-    height: auto;
 
-    @media screen and (max-width: 1100px) {
-        padding: 15px 10px 0;
-    }
 `;
 
-export const NavHeading = styled.h1`
-    width: 300px;    
+export const NavWrap = styled(Container)`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+`;
+
+export const NavHeading = styled.h1`    
+    width: 280px;    
+    line-height: 0;
     z-index: 1;
 
     @media screen and (max-width: 1100px) {

@@ -1,6 +1,20 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+    @font-face {
+    font-family: 'SCDream';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./font/SCDream4.otf") format('truetype')
+    }
+
+    @font-face {
+    font-family: 'SCDream';
+    font-style: normal;
+    font-weight: 700;
+    src: url("./font/SCDream7.otf") format('truetype')
+    }   
+    
     * {
         margin: 0;
         padding: 0;
@@ -14,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 16px;
         color: #fff;
         background-color: #2b2b2b;        
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'SCDream', sans-serif;
     }
 
     ul {
@@ -33,10 +47,17 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Section = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;    
-    height: 100vh;
-    padding: 0 3.25rem;
-    z-index: 1; 
+    height: 100vh; 
+    
+
+    @media screen and (max-width: 1300px) {
+        height: auto;
+        box-sizing: content-box;
+    }
 `;
 
 export const IntroText = styled.h1`
@@ -44,17 +65,27 @@ export const IntroText = styled.h1`
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding: 0 0 15vh;
     font-size: 2.24rem;    
 `;
 
-export const Heading = styled.h2`
-    margin-bottom: 15px;
-    font-size: 3rem;
+export const Heading = styled.h2`    
+    font-size: 2.625em;
     color: #ffab12;
     text-shadow: 1px 1px 5px #000;
     font-family: 'Poppins',sans-serif;
+`;
+
+export const Container = styled.div`
+    margin: 0 auto;
+    padding: 0 35px;
+    width: 1360px;
+    height: auto; 
+
+    @media screen and (max-width: 1400px) {
+        width: 100%;
+    }
 `;
 
 export default GlobalStyle;
