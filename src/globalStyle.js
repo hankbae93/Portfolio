@@ -4,8 +4,15 @@ const GlobalStyle = createGlobalStyle`
     @font-face {
     font-family: 'SCDream';
     font-style: normal;
-    font-weight: normal;
-    src: url("./font/SCDream4.otf") format('truetype')
+    font-weight: 300;
+    src: url("./font/SCDream3.otf") format('truetype')
+    }
+
+    @font-face {
+    font-family: 'SCDream';
+    font-style: normal;
+    font-weight: 500;
+    src: url("./font/SCDream5.otf") format('truetype')
     }
 
     @font-face {
@@ -36,6 +43,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     button, a {
+        border: none;
+        text-decoration: none;
         cursor: pointer;
     }
 
@@ -71,7 +80,7 @@ export const IntroText = styled.h1`
 `;
 
 export const Heading = styled.h2`    
-    font-size: 2.625em;
+    font-size: 2.625rem;
     color: #ffab12;
     text-shadow: 1px 1px 5px #000;
     font-family: 'Poppins',sans-serif;

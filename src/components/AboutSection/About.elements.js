@@ -52,11 +52,13 @@ export const AboutTextWrapper = styled.div`
         padding: 25px 0;
     }
 `;
+
 export const AboutSubtitle = styled.h4`
     color: #afb9c8;
     font-size: 1.125em;
     font-family: 'Poppins',sans-serif;
 `;
+
 export const AboutText = styled.p`
     font-size: 1.0625em;
     margin-bottom: 15px;
