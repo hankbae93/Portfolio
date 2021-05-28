@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.66420b6e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.66420b6e.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.0ea0cc0e.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0ea0cc0e.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.6cc9313d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.6cc9313d.js.map",
-    "static/js/2.b4d431b9.chunk.js": "/Portfolio/static/js/2.b4d431b9.chunk.js",
-    "static/js/2.b4d431b9.chunk.js.map": "/Portfolio/static/js/2.b4d431b9.chunk.js.map",
+    "static/js/2.930a50f4.chunk.js": "/Portfolio/static/js/2.930a50f4.chunk.js",
+    "static/js/2.930a50f4.chunk.js.map": "/Portfolio/static/js/2.930a50f4.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/js/2.b4d431b9.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b4d431b9.chunk.js.LICENSE.txt",
+    "static/js/2.930a50f4.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.930a50f4.chunk.js.LICENSE.txt",
     "static/media/about-background.0648d164.jpg": "/Portfolio/static/media/about-background.0648d164.jpg",
     "static/media/about.jpg": "/Portfolio/static/media/about.99562a5b.jpg",
-    "static/media/loa-status-app.jpg": "/Portfolio/static/media/loa-status-app.ad0b1c31.jpg",
-    "static/media/netflix-clone03.png": "/Portfolio/static/media/netflix-clone03.4023ecd8.png"
+    "static/media/project01-stream.jpg": "/Portfolio/static/media/project01-stream.5f0c05ca.jpg",
+    "static/media/project02-home.jpg": "/Portfolio/static/media/project02-home.e349fb27.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6cc9313d.js",
-    "static/js/2.b4d431b9.chunk.js",
-    "static/js/main.66420b6e.chunk.js"
+    "static/js/2.930a50f4.chunk.js",
+    "static/js/main.0ea0cc0e.chunk.js"
   ]
 }
