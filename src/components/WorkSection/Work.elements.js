@@ -5,7 +5,7 @@ import { AboutTechInfo } from '../AboutSection/About.elements';
 export const WorkWrapper = styled(Section)`
     height: auto;
     color: #333;
-    background-color: #e0e7ff;
+    background-color: #e8e8e8;
     box-shadow: inset 1px 1px 5px rgb(0,0,0, 0.8);
 `;
 
@@ -54,7 +54,7 @@ export const ProjectTextWrapper = styled.div`
 `;  
 
 export const ProjectTitle = styled.h3`
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color: #5850eb;
     font-size: 1.5rem;
     line-height: 1;
@@ -71,6 +71,7 @@ export const ProjectTech = styled.ul`
    justify-content: flex-start;
    align-items: center;
    flex-wrap: wrap;
+   margin-bottom: 30px;
 `;
 
 export const ProjectTechInfo = styled(AboutTechInfo)`
