@@ -41,6 +41,13 @@ export const ProjectImg = styled.div.attrs(({ data }) => ({
     height: 800px;
     background-size: 100%;  
     background-repeat: no-repeat;    
+
+    @media screen and (max-width: 1300px) {
+        flex: none;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 30px;
+    }
 `;
 
 
@@ -50,11 +57,15 @@ export const ProjectTextWrapper = styled.div`
 
     @media screen and (max-width: 1300px) {
         padding: 0;
+
+        & > * {
+            margin-bottom: 20px !important;
+        }
     }
 `;  
 
 export const ProjectTitle = styled.h3`
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     color: #5850eb;
     font-size: 1.5rem;
     line-height: 1;
@@ -71,7 +82,7 @@ export const ProjectTech = styled.ul`
    justify-content: flex-start;
    align-items: center;
    flex-wrap: wrap;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
 `;
 
 export const ProjectTechInfo = styled(AboutTechInfo)`
@@ -81,7 +92,7 @@ export const ProjectTechInfo = styled(AboutTechInfo)`
 `;
 
 export const ProjectDesc = styled.p`
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: #333;
     line-height: 1.5;
     font-weight: 300;    
