@@ -26,29 +26,31 @@ const Face = ({ menu }) => {
     };
 
     const scaleFace = e => {
-        const y = window.scrollY;
-        const viewHeight = window.innerHeight;
-        const viewWidth = window.innerWidth;
-        const firstTop = Math.floor(viewHeight / 100 * 22); // face default top
-        const baseTop = (viewWidth < 1101) ? 32 : 0;  // face animation end top
-        const topDiffer = firstTop - baseTop;   
-        const animationEndY = Math.floor(viewHeight / 2);
-        const currentTop = firstTop - Math.floor((y / animationEndY) * (topDiffer)); 
-        const currentScale = (1.1 - (y / animationEndY)).toFixed(3);
-
-        if (y > 0 && y <= animationEndY) {
-            setCurrentScroll({
-                ...currentScroll, 
-                top: currentTop,
-                scale: currentScale
-            });
-        } else if (y > animationEndY) {
-            setCurrentScroll({
-                ...currentScroll, 
-                top: baseTop,
-                scale: 0.1
-            });
-        }        
+        return requestAnimationFrame(() => {
+            const y = window.scrollY;
+            const viewHeight = window.innerHeight;
+            const viewWidth = window.innerWidth;
+            const firstTop = Math.floor(viewHeight / 100 * 22); // face default top
+            const baseTop = (viewWidth < 1101) ? 32 : 0;  // face animation end top
+            const topDiffer = firstTop - baseTop;   
+            const animationEndY = Math.floor(viewHeight / 2);
+            const currentTop = firstTop - Math.floor((y / animationEndY) * (topDiffer)); 
+            const currentScale = (1.1 - (y / animationEndY)).toFixed(3);
+            console.log(y)
+            if (y > 0 && y <= animationEndY) {
+                setCurrentScroll({
+                    ...currentScroll, 
+                    top: currentTop,
+                    scale: currentScale
+                });
+            } else if (y > animationEndY) {
+                setCurrentScroll({
+                    ...currentScroll, 
+                    top: baseTop,
+                    scale: 0.1
+                });
+            }        
+        })
     };
 
     useEffect(() => {

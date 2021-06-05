@@ -24,7 +24,7 @@ const projectData = {
     },
     loaya: {
         tech: ['React', 'Context API', 'axios', 'Node.js', 'Express.js', 'cheerio', 'heroku'],
-        txt: '로스트아크 게임 공식 오픈 API가 없는 관계로 로스트아크 공식사이트의 전적정보실에서 클라이언트의 사용자가 입력하는 아이디의 정보를 웹 크롤링(cheerio 라이브러리를 적극 활용)으로 서버에 가져와 가공한 API를 다시 클라이언트에 제공하는 방식으로 구현하였습니다. proxy, cors 정책 문제 등에 부딪히면서 더욱 넓은 시야를 가지게 된 프로젝트였습니다.',
+        txt: '로스트아크 게임 공식 오픈 API가 없는 관계로 로스트아크 공식사이트의 전적정보실에서 클라이언트의 사용자가 입력하는 아이디의 정보를 웹 크롤링(cheerio 라이브러리를 적극 활용)으로 서버에 가져와 가공한 API를 다시 클라이언트에 제공하는 방식으로 구현하였습니다. 다른 출처의 사이트끼리 자원을 통신하게 되면서 proxy, cors 개념을 이해하고 더욱 넓은 시야를 가지게 된 프로젝트였습니다.',
         url: require('../../images/project02-home.jpg').default
     }
 };
